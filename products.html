@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- TODO: Paste GTM HEAD snippet here later -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunaRose Retro Jewels | Collection</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #fff7fb;
+      color: #3c233c;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ffbcd9, #ffd4b8);
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .logo span {
+      font-size: 0.8rem;
+      display: block;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 1rem;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
+
+    nav a:hover {
+      border-color: #3c233c;
+      background: rgba(255,255,255,0.6);
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+
+    h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.9rem;
+      text-align: center;
+      margin-bottom: 0.4rem;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-bottom: 2rem;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.1rem;
+      border: 1px solid rgba(60,35,60,0.08);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.04);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 240px;
+    }
+
+    .product-tag {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      opacity: 0.7;
+      margin-bottom: 0.4rem;
+    }
+
+    .product-name {
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .product-desc {
+      font-size: 0.86rem;
+      opacity: 0.9;
+      margin-bottom: 0.7rem;
+    }
+
+    .product-price {
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+    }
+
+    .btn {
+      border-radius: 999px;
+      border: none;
+      padding: 0.55rem 1.1rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+      background: #3c233c;
+      color: #ffe9f6;
+      align-self: flex-start;
+      box-shadow: 0 4px 10px rgba(60,35,60,0.3);
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 14px rgba(60,35,60,0.35);
+    }
+
+    .back-link {
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .back-link a {
+      color: #3c233c;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      header {
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- TODO: Paste GTM BODY snippet (noscript) here later -->
+
+  <header>
+    <div class="logo">
+      LunaRose
+      <span>RETRO JEWELS</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Collection</a>
+      <a href="payments.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Retro Jewelry Collection</h1>
+    <p class="subtitle">
+      Mix of dainty gold, pearl accents, and soft pastel stones—curated for a girly, vintage vibe.
+    </p>
+
+    <section class="product-grid">
+      <article class="product-card">
+        <div>
+          <div class="product-tag">Necklace</div>
+          <div class="product-name">Pastel Dream Layered Chain</div>
+          <div class="product-desc">
+            Triple-layer chain with tiny heart charms and a soft gold finish.
+          </div>
+          <div class="product-price">₹1,499</div>
+        </div>
+        <button class="btn" onclick="location.href='payments.html'">
+          Add to Cart
+        </button>
+      </article>
+
+      <article class="product-card">
+        <div>
+          <div class="product-tag">Choker</div>
+          <div class="product-name">Old Film Pearl Choker</div>
+          <div class="product-desc">
+            Faux pearls with a vintage clasp—feels like a 90s movie wardrobe piece.
+          </div>
+          <div class="product-price">₹1,299</div>
+        </div>
+        <button class="btn" onclick="location.href='payments.html'">
+          Add to Cart
+        </button>
+      </article>
+
+      <article class="product-card">
+        <div>
+          <div class="product-tag">Rings</div>
+          <div class="product-name">Polaroid Memory Ring Set</div>
+          <div class="product-desc">
+            Set of 4 adjustable rings with tiny pastel stones and retro shapes.
+          </div>
+          <div class="product-price">₹899</div>
+        </div>
+        <button class="btn" onclick="location.href='payments.html'">
+          Add to Cart
+        </button>
+      </article>
+
+      <article class="product-card">
+        <div>
+          <div class="product-tag">Earrings</div>
+          <div class="product-name">Soft Glow Hoop Earrings</div>
+          <div class="product-desc">
+            Lightweight hoops with a blush-toned enamel finish.
+          </div>
+          <div class="product-price">₹1,099</div>
+        </div>
+        <button class="btn" onclick="location.href='payments.html'">
+          Add to Cart
+        </button>
+      </article>
+    </section>
+
+    <div class="back-link">
+      or <a href="index.html">go back to the home page</a>
+    </div>
+  </main>
+</body>
+</html>
