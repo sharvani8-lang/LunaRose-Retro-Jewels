@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- TODO: Paste GTM HEAD snippet here later -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunaRose Retro Jewels | Checkout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #fff7fb;
+      color: #3c233c;
+    }
+
+    header {
+      background: linear-gradient(135deg, #ffbcd9, #ffd4b8);
+      padding: 1.2rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+    }
+
+    .logo span {
+      font-size: 0.8rem;
+      display: block;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin-left: 1rem;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+    }
+
+    nav a:hover {
+      border-color: #3c233c;
+      background: rgba(255,255,255,0.6);
+    }
+
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+      display: grid;
+      grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      gap: 2rem;
+    }
+
+    h1 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.75rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .subtitle {
+      font-size: 0.9rem;
+      opacity: 0.85;
+      margin-bottom: 1.3rem;
+    }
+
+    form {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.5rem 1.4rem;
+      border: 1px solid rgba(60,35,60,0.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+    }
+
+    label {
+      display: block;
+      font-size: 0.85rem;
+      margin-bottom: 0.25rem;
+      font-weight: 500;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 0.55rem 0.6rem;
+      margin-bottom: 0.8rem;
+      border-radius: 10px;
+      border: 1px solid rgba(60,35,60,0.18);
+      font-family: inherit;
+      font-size: 0.9rem;
+      background: #fffafc;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+    }
+
+    .btn {
+      width: 100%;
+      border-radius: 999px;
+      border: none;
+      padding: 0.8rem 1.4rem;
+      font-size: 0.95rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      cursor: pointer;
+      background: #3c233c;
+      color: #ffe9f6;
+      box-shadow: 0 4px 12px rgba(60,35,60,0.35);
+      margin-top: 0.5rem;
+      transition: transform 0.12s ease, box-shadow 0.12s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 16px rgba(60,35,60,0.4);
+    }
+
+    .summary-card {
+      background: #ffffff;
+      border-radius: 18px;
+      padding: 1.3rem 1.2rem;
+      border: 1px solid rgba(60,35,60,0.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+      font-size: 0.9rem;
+      height: fit-content;
+    }
+
+    .summary-title {
+      font-weight: 600;
+      margin-bottom: 0.8rem;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0.4rem;
+    }
+
+    .summary-row.total {
+      margin-top: 0.5rem;
+      font-weight: 600;
+    }
+
+    .note {
+      font-size: 0.8rem;
+      opacity: 0.8;
+      margin-top: 0.8rem;
+    }
+
+    .back-link {
+      grid-column: 1 / -1;
+      margin-top: 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    .back-link a {
+      color: #3c233c;
+      text-decoration: underline;
+    }
+
+    @media (max-width: 800px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      header {
+        flex-direction: column;
+        gap: 0.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- TODO: Paste GTM BODY snippet (noscript) here later -->
+
+  <header>
+    <div class="logo">
+      LunaRose
+      <span>RETRO JEWELS</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="products.html">Collection</a>
+      <a href="payments.html">Checkout</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Secure Checkout</h1>
+      <p class="subtitle">
+        Enter your details to complete your LunaRose order. This is a demo checkout page for tracking.
+      </p>
+
+      <!-- Simple demo form: redirects to thankyou.html -->
+      <form action="thankyou.html" method="GET">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" placeholder="e.g. Aditi Rao" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" placeholder="e.g. you@example.com" required>
+
+        <label for="address">Shipping Address</label>
+        <input id="address" name="address" type="text" placeholder="Flat / Street / Area" required>
+
+        <div class="two-col">
+          <div>
+            <label for="city">City</label>
+            <input id="city" name="city" type="text" placeholder="e.g. Hyderabad" required>
+          </div>
+          <div>
+            <label for="pin">PIN Code</label>
+            <input id="pin" name="pin" type="text" placeholder="e.g. 500001" required>
+          </div>
+        </div>
+
+        <label for="payment">Payment Method</label>
+        <select id="payment" name="payment" required>
+          <option value="">Select payment method</option>
+          <option>UPI</option>
+          <option>Credit Card</option>
+          <option>Debit Card</option>
+          <option>Cash on Delivery</option>
+        </select>
+
+        <div class="two-col">
+          <div>
+            <label for="card">Card / UPI ID (demo)</label>
+            <input id="card" name="card" type="text" placeholder="XXXX-XXXX / your@upi">
+          </div>
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="text" placeholder="+91-XXXXXXXXXX">
+          </div>
+        </div>
+
+        <button class="btn" type="submit">
+          Place Order (Demo)
+        </button>
+      </form>
+    </section>
+
+    <aside class="summary-card">
+      <div class="summary-title">Order Summary (Demo)</div>
+      <div class="summary-row">
+        <span>Selected item</span>
+        <span>Retro jewelry</span>
+      </div>
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span>₹1,499</span>
+      </div>
+      <div class="summary-row">
+        <span>Shipping</span>
+        <span>₹0</span>
+      </div>
+      <div class="summary-row total">
+        <span>Total</span>
+        <span>₹1,499</span>
+      </div>
+      <p class="note">
+        This checkout page is mainly for demo purposes: GA4 events, Google Ads
+        conversion, and cross-domain cookie testing.
+      </p>
+    </aside>
+
+    <div class="back-link">
+      or <a href="products.html">go back to the collection</a>
+    </div>
+  </main>
+</body>
+</html>
